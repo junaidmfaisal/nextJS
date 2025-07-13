@@ -1,10 +1,11 @@
 import React from 'react'
-
+import Nav from '@/components/Nav'
+import Hero from '@/components/Hero'
 function Mainpage() {
   return (
     <div>
-      <h1>home
-      </h1>
+      <Nav/>
+      <Hero/>
     </div>
   )
 }

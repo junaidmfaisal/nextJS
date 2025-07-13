@@ -1,122 +1,104 @@
 'use client';
 
-import { useRef } from 'react';
-import Link from 'next/link';
-import { motion, useInView } from 'framer-motion';
-import { Playfair_Display, Poppins } from 'next/font/google';
-
-// Fonts
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  display: 'swap',
-  variable: '--font-playfair',
-});
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  display: 'swap',
-  variable: '--font-poppins',
-});
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
 
 export default function Hero() {
-  const headingRef = useRef(null);
-  const buttonRef = useRef(null);
-
-  const isHeadingInView = useInView(headingRef, { once: true });
-  const isButtonInView = useInView(buttonRef, { once: true });
-
-  const introHeading = 'Welcome to Homora Interiors';
-  const headingLine1 =
-    'At Homora Interiors, we believe your home should be more than just a place to live—';
-  const headingLine2 = 'it should reflect who you are.';
-  const subheading =
+  const heading = 'Welcome to Homora Interiors';
+  const subHeading =
+    'At Homora Interiors, we believe your home should be more than just a place to live—it should reflect who you are.';
+  const secondaryText =
     'Based in Kochi, we’re passionate about transforming everyday spaces into modern, functional, and stylish sanctuaries you’ll love coming home to.';
-  const buttonText = 'Start Your Design Journey';
 
-  const container = {
-    hidden: {},
-    visible: {
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+
+  const wordAnimation = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
       transition: {
-        staggerChildren: 0.035,
+        delay: i * 0.08,
+        duration: 0.5,
+        ease: 'easeOut',
       },
-    },
+    }),
   };
 
-  const letter = {
-    hidden: { opacity: 0, y: 40 },
+  const fadeInUp = (delay: number = 0.3) => ({
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
+        delay,
+        duration: 0.6,
         ease: 'easeOut',
-        duration: 0.35,
       },
     },
-  };
+  });
 
   return (
     <section
-      className={`${playfair.variable} ${poppins.variable} h-screen flex items-center justify-center bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] px-4`}
+      ref={ref}
+      className="relative h-screen w-full bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] overflow-hidden"
     >
-      <div className="text-center max-w-5xl text-white flex flex-col items-center">
-        {/* Intro heading */}
-        <h2 className="text-sm md:text-base font-medium uppercase tracking-wider mb-6 text-white">
-          {introHeading}
-        </h2>
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/20 z-0" />
 
-        {/* Line 1 */}
-        <motion.h1
-          ref={headingRef}
-          className="text-3xl md:text-5xl font-semibold leading-tight mb-2 flex justify-center flex-wrap text-center"
-          variants={container}
-          initial="hidden"
-          animate={isHeadingInView ? 'visible' : 'hidden'}
-        >
-          {headingLine1.split('').map((char, index) => (
-            <motion.span key={index} variants={letter}>
-              {char === ' ' ? '\u00A0' : char}
-            </motion.span>
-          ))}
-        </motion.h1>
+      {/* Content */}
+      <div className="relative z-10 h-full flex items-center justify-center px-4">
+        <div className="max-w-3xl w-full text-center">
+          {/* Animated heading */}
+          <h1 className="text-4xl md:text-6xl font-semibold text-white mb-6 leading-tight tracking-tight flex flex-wrap justify-center">
+            {heading.split(' ').map((word, i) => (
+              <motion.span
+                key={i}
+                custom={i}
+                variants={wordAnimation}
+                initial="hidden"
+                animate={inView ? 'visible' : 'hidden'}
+                className="inline-block mr-2"
+              >
+                {word}
+              </motion.span>
+            ))}
+          </h1>
 
-        {/* Line 2 */}
-        <motion.h1
-          className="text-3xl md:text-5xl font-semibold leading-tight mb-6 flex justify-center flex-wrap text-center"
-          variants={container}
-          initial="hidden"
-          animate={isHeadingInView ? 'visible' : 'hidden'}
-        >
-          {headingLine2.split('').map((char, index) => (
-            <motion.span key={index} variants={letter}>
-              {char === ' ' ? '\u00A0' : char}
-            </motion.span>
-          ))}
-        </motion.h1>
+          {/* Subheading */}
+          <motion.p
+            variants={fadeInUp(heading.split(' ').length * 0.08 + 0.3)}
+            initial="hidden"
+            animate={inView ? 'visible' : 'hidden'}
+            className="text-white text-lg md:text-xl font-medium mb-4 leading-relaxed"
+          >
+            {subHeading}
+          </motion.p>
 
-        {/* Subheading */}
-        <p
-          className="text-lg md:text-xl font-light mb-10 text-center"
-          style={{ fontFamily: 'var(--font-body)' }}
-        >
-          {subheading}
-        </p>
+          {/* Secondary text */}
+          <motion.p
+            variants={fadeInUp(heading.split(' ').length * 0.08 + 0.6)}
+            initial="hidden"
+            animate={inView ? 'visible' : 'hidden'}
+            className="text-white text-base md:text-lg mb-8 leading-loose"
+          >
+            {secondaryText}
+          </motion.p>
 
-        {/* CTA Button */}
-        <motion.div
-          ref={buttonRef}
-          variants={container}
-          initial="hidden"
-          animate={isButtonInView ? 'visible' : 'hidden'}
-          className="inline-block bg-white text-black px-6 py-3 rounded-full text-sm font-medium border transition duration-300 hover:bg-[#00787a] hover:text-white hover:border-white"
-        >
-          {buttonText.split('').map((char, i) => (
-            <motion.span key={i} variants={letter}>
-              {char === ' ' ? '\u00A0' : char}
-            </motion.span>
-          ))}
-        </motion.div>
+          {/* CTA Button */}
+          <motion.div
+            variants={fadeInUp(heading.split(' ').length * 0.08 + 0.9)}
+            initial="hidden"
+            animate={inView ? 'visible' : 'hidden'}
+          >
+            <Button className="text-base md:text-lg px-6 py-3 rounded-full bg-white text-black hover:bg-gray-200 transition group">
+              <span className="transition-transform duration-300 group-hover:-translate-y-1">
+                Get Started
+              </span>
+            </Button>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

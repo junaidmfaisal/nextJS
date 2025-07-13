@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import Nav from "@/components/Nav"; // ✅ Import Nav
+import Nav from "@/components/Nav";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -25,14 +25,14 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
-      <body className={roboto.className}>
-        {/* ✅ Global sticky Nav */}
+      <body
+        className={`${roboto.className} bg-white text-gray-900 antialiased scroll-smooth`}
+      >
+        {/* Global Navigation */}
         <Nav />
 
-        {/* ✅ Main content starts below nav */}
-        <main className="pt-16">
-          {children}
-        </main>
+        {/* Main content area */}
+        <main className="pt-16">{children}</main>
       </body>
     </html>
   );

@@ -7,6 +7,7 @@ import WhyChoose from '@/components/Whychoose'
 import Mission from '@/components/Mission'
 import Journey from '@/components/Journey'
 import CTASection from '@/components/CTA'
+import Faq from '@/components/Faq'
 function Mainpage() {
   return (
     <div>
@@ -16,6 +17,7 @@ function Mainpage() {
       <WhyChoose/>
       <Mission/>
       <Journey/>
+      <Faq/>
       <CTASection/>
       <Footer/>
     </div>

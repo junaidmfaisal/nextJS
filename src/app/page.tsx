@@ -1,25 +1,27 @@
-// components
-import { Navbar, Footer } from "@/components";
-
-// sections
-import Hero from "./hero";
-import VideoIntro from "./video-intro";
-import Feature from "./feature";
-import MobileConvenience from "./mobile-convenience";
-import Testimonials from "./testimonials";
-import Faqs from "./faqs";
-
-export default function Campaign() {
+import React from 'react'
+import Nav from '@/components/Nav'
+import Hero from '@/components/Hero'
+import About from '@/components/About'
+import Footer from '@/components/Footer'
+import WhyChoose from '@/components/Whychoose'
+import Mission from '@/components/Mission'
+import Journey from '@/components/Journey'
+import CTASection from '@/components/CTA'
+import Faq from '@/components/Faq'
+function Mainpage() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <VideoIntro />
-      <Feature />
-      <MobileConvenience />
-      <Testimonials />
-      <Faqs />
-      <Footer />
-    </>
-  );
+    <div>
+      <Nav/>
+      <Hero/>
+      <About/>
+      <WhyChoose/>
+      <Mission/>
+      <Journey/>
+      <Faq/>
+      <CTASection/>
+      <Footer/>
+    </div>
+  )
 }
+
+export default Mainpage

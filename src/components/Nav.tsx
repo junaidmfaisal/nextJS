@@ -11,8 +11,8 @@ export default function Nav() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#projects', label: 'Projects' },
+    { href: '/home', label: 'Home' },
+    { href: '/projects', label: 'Projects' },
     { href: '#services', label: 'Services' },
     { href: '#contact', label: 'Contact' },
   ];

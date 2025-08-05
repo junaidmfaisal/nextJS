@@ -3,13 +3,14 @@
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 export default function Hero() {
   const heading = 'Welcome to Homora Interiors';
   const subHeading =
     'At Homora Interiors, we believe your home should be more than just a place to live—it should reflect who you are.';
   const secondaryText =
-    'Based in Kochi, we’re passionate about transforming everyday spaces into modern, functional, and stylish sanctuaries you’ll love coming home to.';
+    "Based in Kochi, we're passionate about transforming everyday spaces into modern, functional, and stylish sanctuaries you'll love coming home to.";
 
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
@@ -42,10 +43,22 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative h-screen w-full bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] overflow-hidden"
+      className="relative h-screen w-full overflow-hidden"
     >
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/img1 (1).jpeg" 
+          alt="Modern interior design"
+          fill
+          className="object-cover"
+          priority
+          quality={100}
+        />
+      </div>
+
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/20 z-0" />
+      <div className="absolute inset-0 bg-black/40 z-0" />
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center justify-center px-4">
@@ -92,9 +105,12 @@ export default function Hero() {
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
           >
-            <Button className="text-base md:text-lg px-6 py-3 rounded-full bg-white text-black hover:bg-gray-200 transition group">
-              <span className="transition-transform duration-300 group-hover:-translate-y-1">
+            <Button className="text-base md:text-lg px-6 py-3 rounded-full bg-white text-[#004e66] hover:bg-gray-100 transition-all duration-300 group shadow-lg hover:shadow-xl">
+              <span className="transition-transform duration-300 group-hover:-translate-y-1 inline-block">
                 Get Started
+              </span>
+              <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1 inline-block">
+                →
               </span>
             </Button>
           </motion.div>

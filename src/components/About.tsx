@@ -60,7 +60,7 @@ export default function About() {
             Our mission is to make your dream home life simpler, smarter, and more enjoyable through best design with high quality products and service. We emphasize customer satisfaction, reliable delivery, and responsive support with our team.
           </p>
           <p>
-            Whether you are looking to revamp your home, our expertise team is here to guide you through every step of the design journey. Our designs are best design which is practical and quality essential for your dream&nbsp;home&nbsp;needs !.
+            Whether you are looking to revamp your home, our expertise team is here to guide you through every step of the design journey. Our designs are best design which is practical and quality essential for your dream&nbsp;home&nbsp;needs.
           </p>
         </div>
 

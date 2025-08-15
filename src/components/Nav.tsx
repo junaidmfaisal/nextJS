@@ -14,7 +14,7 @@ export default function Nav() {
     { href: '/home', label: 'Home' },
     { href: '/projects', label: 'Projects' },
     { href: '#services', label: 'Services' },
-    { href: '#contact', label: 'Contact' },
+    { href: '/contact', label: 'contact' },
   ];
 
   useEffect(() => {

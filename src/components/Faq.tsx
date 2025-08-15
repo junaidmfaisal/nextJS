@@ -62,11 +62,11 @@ const Faq = () => {
   const heading = 'FAQs About Home Interior Design';
 
   return (
-    <section className="max-w-4xl mx-auto py-12 px-4">
+    <section className="max-w-4xl mx-auto py-8 sm:py-12 px-3 sm:px-4 md:px-6">
       {/* Scroll-Triggered Animated Heading */}
       <motion.h2
         ref={headingRef}
-        className="text-3xl font-bold mb-8 text-center flex justify-center flex-wrap"
+        className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center flex justify-center flex-wrap leading-snug"
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
       >
@@ -78,7 +78,7 @@ const Faq = () => {
       </motion.h2>
 
       {/* FAQ Section */}
-      <div className="space-y-4">
+      <div className="space-y-3 sm:space-y-4">
         {faqs.map((faq, index) => {
           const isOpen = openIndex === index;
           return (
@@ -87,17 +87,17 @@ const Faq = () => {
               className="border rounded-lg overflow-hidden bg-white shadow-sm"
             >
               <button
-                className="w-full text-left px-5 py-4 flex justify-between items-center font-medium text-gray-800 hover:bg-gray-100 transition"
+                className="w-full text-left px-4 sm:px-5 py-3 sm:py-4 flex justify-between items-center font-medium text-gray-800 hover:bg-gray-100 transition text-sm sm:text-base"
                 onClick={() => toggleFAQ(index)}
               >
-                <span>{index + 1}. {faq.question}</span>
-                {isOpen ? <Minus size={20} /> : <Plus size={20} />}
+                <span className="flex-1">{index + 1}. {faq.question}</span>
+                {isOpen ? <Minus size={18} /> : <Plus size={18} />}
               </button>
               <motion.div
                 initial={{ height: 0, opacity: 0 }}
                 animate={isOpen ? { height: 'auto', opacity: 1 } : { height: 0, opacity: 0 }}
                 transition={{ duration: 0.3 }}
-                className="overflow-hidden px-5 text-sm text-gray-600"
+                className="overflow-hidden px-4 sm:px-5 text-xs sm:text-sm text-gray-600"
               >
                 <div className="py-2">{faq.answer}</div>
               </motion.div>

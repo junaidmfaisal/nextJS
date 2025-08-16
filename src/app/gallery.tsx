@@ -38,7 +38,6 @@ export default function GalleryPage() {
             height={200}
             className="object-cover w-full h-auto"
           />
-          <p className="text-center mt-2">{img.title}</p>
         </div>
       ))}
     </div>

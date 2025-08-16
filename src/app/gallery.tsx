@@ -1,5 +1,5 @@
 // pages/gallery.tsx
-import { client } from "@/sanity.client";
+import { client } from "@/lib/sanity.client";
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 

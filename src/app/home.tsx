@@ -24,8 +24,7 @@ function Mainpage() {
       <Mission/>
       <Journey/>
       <Faq/>
-      <CTASection/>
-      <Footer/>
+      
     </div>
   )
 }

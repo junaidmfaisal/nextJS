@@ -2,6 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
+import CTASection from "@/components/CTA";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -12,7 +14,7 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "HOMORA Interiors",
   description:
-    "A clean and responsive portfolio site for HOMORA Interiors built with Next.js and Tailwind CSS. Featuring scroll animations, project sections, and a custom admin upload system.",
+    "",
 };
 
 export default function RootLayout({
@@ -33,6 +35,8 @@ export default function RootLayout({
 
         {/* Main content area */}
         <main className="pt-16">{children}</main>
+        <CTASection/>
+         <Footer />
       </body>
     </html>
   );

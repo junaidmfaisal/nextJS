@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Contact1() {
   return (
-    <section className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-start bg-black text-white">
+    <section className="relative w-full h-[60vh] md:h-[60vh] flex items-center justify-start bg-black text-white">
       {/* Background Image */}
       <Image
         src="/img1 (11).jpeg"

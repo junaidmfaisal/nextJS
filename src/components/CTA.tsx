@@ -36,16 +36,16 @@ export default function CTASection() {
   );
 
   return (
-    <section className="w-full px-4 py-20 bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white">
+    <section className="w-full px-4 py-16 sm:py-20 bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white">
       <div className="max-w-4xl mx-auto text-center space-y-6">
-        <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight break-words">
           {renderAnimatedText('Ready to Transform Your Home?')}
         </h2>
-        <p className="text-lg md:text-xl">
+        <p className="text-base sm:text-lg md:text-xl px-2 sm:px-6">
           Let’s make your living space beautifully you — modern, functional, and uniquely personal. Connect with us and bring your vision to life.
         </p>
         <div>
-          <Button className="text-white bg-white/10 hover:bg-white/40 border border-white/30 rounded-full">
+          <Button className="text-white bg-white/10 hover:bg-white/40 border border-white/30 rounded-full px-6 py-2 sm:px-8 sm:py-3 text-sm sm:text-base">
             Get in Touch
           </Button>
         </div>

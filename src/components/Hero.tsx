@@ -43,12 +43,12 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative h-screen w-full overflow-hidden"
+      className="relative min-h-screen w-full overflow-hidden"
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/home.jpg" 
+          src="/home.jpg"
           alt="Modern interior design"
           fill
           className="object-cover"
@@ -61,8 +61,16 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40 z-0" />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center justify-center px-4">
+      <div className="relative z-10 h-full flex items-start justify-center px-4 pt-12 sm:pt-16 ">
         <div className="max-w-3xl w-full text-center">
+          <Image
+            src="/logo1.png"
+            alt="Homora Logo"
+            width={250}
+            height={100}
+            className="h-[19rem] w-[20rem] object-contain mx-auto "
+            priority
+          />
           {/* Animated heading */}
           <h1 className="text-4xl md:text-6xl font-semibold text-white mb-6 leading-tight tracking-tight flex flex-wrap justify-center">
             {heading.split(' ').map((word, i) => (

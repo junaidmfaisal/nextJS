@@ -83,7 +83,7 @@ export default function Nav() {
       {/* Mobile Nav */}
       <div
         className={clsx(
-          'md:hidden transition-all duration-300 overflow-hidden bg-black',
+          'md:hidden transition-all duration-300 overflow-hidden bg-gray-200',
           isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         )}
       >
@@ -93,7 +93,7 @@ export default function Nav() {
               key={href}
               href={href}
               onClick={() => setIsOpen(false)}
-              className="text-sm font-medium text-white hover:text-gray-300 transition"
+              className="text-sm font-medium text-black transition"
             >
               {label}
             </Link>
@@ -101,7 +101,7 @@ export default function Nav() {
           <Link
             href="/admin"
             onClick={() => setIsOpen(false)}
-            className="bg-white text-black px-6 py-2 rounded-full text-sm border border-transparent transition duration-300 hover:bg-[#00787a] hover:text-white hover:border-white"
+            className="bg-white text-black px-6 py-2 rounded-full text-sm border border-black transition duration-300 hover:bg-[#00787a] hover:text-white hover:border-white"
           >
             Upload
           </Link>

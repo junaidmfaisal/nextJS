@@ -38,8 +38,8 @@ export default function GalleryPage() {
             <Image
               src={img.image.asset.url}
               alt={img.title || "Gallery Image"}
-              width={800}     // required by next/image
-              height={600}    // approximate, can adjust
+              width={800}     
+              height={600}    
               className="w-full h-64 object-cover transform hover:scale-105 transition duration-300"
             />
           </div>

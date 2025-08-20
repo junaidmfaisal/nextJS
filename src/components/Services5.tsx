@@ -32,7 +32,7 @@ export default function Service5() {
           </div>
         </motion.div>
 
-        {/* Right - d2r Offers */}
+        {/* Right - Homora Offers */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -41,7 +41,7 @@ export default function Service5() {
           className="w-full"
         >
           <h3 className="text-center text-xl font-medium text-red-500 mb-4">
-            d2r Offers
+            Homora Offers
           </h3>
           <div className="relative">
             <Image

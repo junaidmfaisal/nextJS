@@ -65,9 +65,9 @@ export default function Service3() {
                     transition={{ duration: 0.8 }}
                     className="text-gray-700 leading-relaxed text-sm sm:text-base w-full md:w-[80rem] col-span-1 md:col-span-2 text-justify"
                 >
-                    We at d2r Interiors believe that the key to a family’s health depends on the
+                    We at Homora Interiors believe that the key to a family’s health depends on the
                     environment in which the food is prepared at their home. In this context,
-                    the kitchen’s design and hygiene are of prime importance. d2r Interiors is
+                    the kitchen’s design and hygiene are of prime importance. Homora Interiors is
                     able to design the most sensible and convenient kitchen interior design
                     solutions for our clients. We keep the little intricacies of hygiene in mind
                     like the use of sunlight to place the wash area in order to prevent
@@ -83,7 +83,7 @@ export default function Service3() {
                     finish are some of the various material finishes that we use in our designs.
                     Marine Plywood, Multi-Wood, MDF materials ensure that the cabinets and
                     shelves ensure a long life is free from rust. Such hygienic and modern
-                    kitchens are made possible by d2r Interiors. We use accessories and fittings
+                    kitchens are made possible by Homora Interiors. We use accessories and fittings
                     from Hettich which is made from superior German Technology.
                 </motion.p>
             </div>
@@ -140,7 +140,7 @@ export default function Service3() {
                     <p className="text-gray-700 leading-relaxed text-sm sm:text-base md:w-[80rem]">
                         People spend a lot of memorable and relaxing moments in the bedroom.
                         It is a place of rest and should provide the utmost comfort. We at
-                        d2r Interiors believe that the materials, design and space management
+                        Homora Interiors believe that the materials, design and space management
                         should be of the highest quality. The need to have an interior design
                         team that can incorporate all these features is of prime importance.
                         Well-designed spaces for wardrobes, personal makeup spaces,
@@ -257,7 +257,7 @@ export default function Service3() {
                     className="mt-10 max-w-4xl  text-center md:text-left"
                 >
                     <p className="text-gray-700 leading-relaxed text-sm sm:text-base md:w-[80rem]">
-                        Every guest who visits a house is received in the living room. It is a room that gives character to a house and its residents. It sets the tone for creating a good first impression. The arrangement of space in the living room is of importance rather than the size of the living room. In addition to this the furniture, the lighting, and the colours are of importance too. We at d2r Interiors have the best professional home and flat interior design team in South India on hand to handle your living room design requirements with regards to a host of different needs like TV Unit, sofa set, center table, lighting, display out and partitioning.
+                        Every guest who visits a house is received in the living room. It is a room that gives character to a house and its residents. It sets the tone for creating a good first impression. The arrangement of space in the living room is of importance rather than the size of the living room. In addition to this the furniture, the lighting, and the colours are of importance too. We at Homora Interiors have the best professional home and flat interior design team in South India on hand to handle your living room design requirements with regards to a host of different needs like TV Unit, sofa set, center table, lighting, display out and partitioning.
                     </p>
                 </motion.div>
             </div>
@@ -311,7 +311,7 @@ export default function Service3() {
                     transition={{ duration: 0.8 }}
                     className="text-gray-700 leading-relaxed text-sm sm:text-base w-full md:w-[80rem] col-span-1 md:col-span-2 text-justify"
                 >
-                    Another room which should define a clean and hygienic environment is the ding room. It is the room where you congregate to dine with family and friends. The dining set, crockery, shelves, and wash area must be aesthetically designed to maximize the space and hygiene requirements in addition to the comfort of dining. Matters like the distance of the dining area to the wash area, the choice of dining table and chairs, lighting, colours used are some of the important aspects we at d2r Interiors pay close attention when designing such a space. The result of such an exercise is a healthy and beautiful dining space.
+                    Another room which should define a clean and hygienic environment is the ding room. It is the room where you congregate to dine with family and friends. The dining set, crockery, shelves, and wash area must be aesthetically designed to maximize the space and hygiene requirements in addition to the comfort of dining. Matters like the distance of the dining area to the wash area, the choice of dining table and chairs, lighting, colours used are some of the important aspects we at Homora Interiors pay close attention when designing such a space. The result of such an exercise is a healthy and beautiful dining space.
                 </motion.p>
             </div>
         </section>

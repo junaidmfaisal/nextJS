@@ -23,7 +23,7 @@ export default function Service2() {
         viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
-        d2r Interiors Services
+        Homora Interiors Services
       </motion.h2>
 
       {/* Description */}

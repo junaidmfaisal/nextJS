@@ -15,7 +15,7 @@ export default function Service5() {
           transition={{ duration: 0.8 }}
           className="w-full"
         >
-          <h3 className="text-center text-xl font-medium text-red-500 mb-4">
+          <h3 className="text-center text-xl font-medium text-black mb-4">
             Make Overs
           </h3>
           <div className="relative">
@@ -40,7 +40,7 @@ export default function Service5() {
           transition={{ duration: 0.8 }}
           className="w-full"
         >
-          <h3 className="text-center text-xl font-medium text-red-500 mb-4">
+          <h3 className="text-center text-xl font-medium text-black mb-4">
             Homora Offers
           </h3>
           <div className="relative">
@@ -63,7 +63,7 @@ export default function Service5() {
                 Offer : <span className="font-bold text-lg">₹ 14.95 Lakhs</span>{' '}
                 <span className="line-through">₹ 19.43 Lakhs</span>
               </p>
-              <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-semibold w-fit transition-colors">
+              <button className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-semibold w-fit transition-colors">
                 Get the offer
               </button>
             </div>

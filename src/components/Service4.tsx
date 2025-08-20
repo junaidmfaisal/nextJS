@@ -19,7 +19,7 @@ export default function Timeline() {
     <section className="w-full py-10 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl font-light text-center text-red-500 mb-20">
+        <h2 className="text-2xl md:text-3xl font-light text-center text-black mb-20">
           45 Working Days Promised Hand Over*
         </h2>
 

@@ -37,7 +37,7 @@ export default function Service1() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-red-600 text-white px-6 py-3 rounded-md font-semibold shadow-lg"
+          className="bg-white text-black px-6 py-3  font-semibold shadow-lg"
         >
           BOOK NOW
         </motion.button>

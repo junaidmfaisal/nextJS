@@ -17,7 +17,7 @@ export default function Service2() {
 
       {/* Heading with Scroll Animation */}
       <motion.h2
-        className="text-2xl sm:text-3xl md:text-4xl font-semibold text-red-600 text-center mb-6"
+        className="text-2xl sm:text-3xl md:text-4xl font-semibold text-black text-center mb-6"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}

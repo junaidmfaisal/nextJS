@@ -75,16 +75,16 @@ export default function Contact2() {
           <div className="space-y-6">
             <div>
               <h4 className="font-semibold">Address Business</h4>
-              <p>123 Main Street, Suite 101</p>
-              <p>Springfield, USA, 12345</p>
+              <p>48/1326-D, Rosa mystica building</p>
+              <p>P.C road, Vyttila P.O kochi-682019</p>
             </div>
             <div>
               <h4 className="font-semibold">Email Address</h4>
-              <p>contact@samplemail.com</p>
+              <p> homorainteriors@gmail.com</p>
             </div>
             <div>
               <h4 className="font-semibold">Contact With Us</h4>
-              <p>Call Consulting: 9876543210</p>
+              <p>Call Consulting: +91 9048400797</p>
             </div>
             <div>
               <h4 className="font-semibold">Working Time</h4>

@@ -64,7 +64,7 @@ export default function Hero() {
       <div className="relative z-10 h-full flex items-start justify-center px-4 pt-12 sm:pt-16 ">
         <div className="max-w-3xl w-full text-center">
           <Image
-            src="/logo1.png"
+            src="/logoalt.png"
             alt="Homora Logo"
             width={250}
             height={100}

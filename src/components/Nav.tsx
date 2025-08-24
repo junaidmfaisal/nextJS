@@ -61,14 +61,14 @@ export default function Nav() {
         </nav>
 
         {/* Upload Button (Desktop) */}
-        <div className="hidden md:flex shrink-0">
+        {/* <div className="hidden md:flex shrink-0">
           <Link
             href="/admin"
             className="bg-white text-black px-6 py-2 rounded-full text-sm border border-transparent transition duration-300 hover:bg-[#00787a] hover:text-white hover:border-white"
           >
             Upload
           </Link>
-        </div>
+        </div> */}
 
         {/* Hamburger Icon (Mobile) */}
         <button
@@ -98,13 +98,13 @@ export default function Nav() {
               {label}
             </Link>
           ))}
-          <Link
+          {/* <Link
             href="/admin"
             onClick={() => setIsOpen(false)}
             className="bg-white text-black px-6 py-2 rounded-full text-sm border border-black transition duration-300 hover:bg-[#00787a] hover:text-white hover:border-white"
           >
             Upload
-          </Link>
+          </Link> */}
         </nav>
       </div>
     </header>

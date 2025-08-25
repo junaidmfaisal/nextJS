@@ -44,21 +44,38 @@ export default function Contact2() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (validate()) {
-      console.log("Form Submitted:", form);
-      alert("Your request has been submitted successfully!");
-      setForm({
-        name: "",
-        email: "",
-        phone: "",
-        needs: "",
-        message: "",
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  if (validate()) {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
       });
-      setErrors({});
+
+      const data = await response.json();
+
+      if (data.success) {
+        alert("✅ Your request has been submitted successfully!");
+        setForm({
+          name: "",
+          email: "",
+          phone: "",
+          needs: "",
+          message: "",
+        });
+        setErrors({});
+      } else {
+        alert("❌ " + data.error);
+      }
+    } catch (err) {
+      console.error(err);
+      alert("⚠ Server error! Please try again.");
     }
-  };
+  }
+};
+
 
   return (
     <section className="w-full bg-gray-50 py-12 px-6 md:px-16">
@@ -148,9 +165,9 @@ export default function Contact2() {
                   }`}
                 >
                   <option value="">Your Needs *</option>
-                  <option value="consulting">Consulting</option>
-                  <option value="support">Support</option>
-                  <option value="partnership">Partnership</option>
+                  <option value="consulting">Designing & Production</option>
+                  <option value="support">Enquiry</option>
+                  <option value="partnership">Support</option>
                 </select>
                 {errors.needs && <p className="text-red-500 text-sm">{errors.needs}</p>}
               </div>

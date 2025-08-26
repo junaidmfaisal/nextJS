@@ -43,7 +43,7 @@ export default function Sample2() {
           Bring your dream home to life with one or no one design help & hand-picked products tailored to your style, space and budget
         </p>
 
-        <div className="flex gap-6 items-center">
+        {/* <div className="flex gap-6 items-center">
           <Link
             href="#"
             className="bg-black text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition"
@@ -60,7 +60,7 @@ export default function Sample2() {
             </div>
             Watch Room
           </Link>
-        </div>
+        </div> */}
 
         <p className="text-gray-400 text-xs mt-4">
           Trusted by World Famous Interior Company

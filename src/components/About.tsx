@@ -38,8 +38,21 @@ export default function About() {
   );
 
   return (
-    <section className="w-full px-4 py-20 bg-white text-gray-900">
-      <div className="max-w-5xl mx-auto space-y-10 text-center">
+    <section className="w-full px-4 py-20 text-gray-900 relative overflow-hidden">
+      {/* Background image container */}
+      <div className="absolute inset-0 z-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/about.jpg",
+            filter: "blur(3px) brightness(0.95)"
+          }}
+        ></div>
+        {/* Gradient overlay for better readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/70 to-white/30"></div>
+      </div>
+      
+      <div className="max-w-5xl mx-auto space-y-10 text-center relative z-10">
         {/* Section Header with Scroll-Triggered Animation */}
         <motion.h2
           ref={headingRef}

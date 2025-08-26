@@ -73,15 +73,6 @@ export default function Footer() {
               <FaInstagram size={20} />
             </a>
             <a 
-              href="https://www.twitter.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="hover:text-yellow-300 transition-colors"
-              aria-label="Visit our Twitter page"
-            >
-              <FaTwitter size={20} />
-            </a>
-            <a 
               href="https://www.linkedin.com" 
               target="_blank" 
               rel="noopener noreferrer"

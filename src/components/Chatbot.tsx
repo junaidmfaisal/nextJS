@@ -1,23 +1,32 @@
-// components/ChatBot.jsx
+// components/ChatBot.tsx
 "use client";
 
 import { useState, useEffect, useRef } from 'react';
 
+type Message = {
+  id: number;
+  text: string;
+  sender: "bot" | "user";
+  timestamp: Date;
+};
+
 const ChatBot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const [messages, setMessages] = useState([]);
-  const messagesEndRef = useRef(null);
+  const [messages, setMessages] = useState<Message[]>([]);
+  const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
   // Animation timing
   useEffect(() => {
-    let timer;
+    let timer: NodeJS.Timeout | null = null;
     if (isOpen) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
     }
-    return () => clearTimeout(timer);
+    return () => {
+      if (timer) clearTimeout(timer);
+    };
   }, [isOpen]);
 
   // Sample initial messages
@@ -28,18 +37,14 @@ const ChatBot = () => {
         text: "Hello! Welcome to HOMORA Interiors. I'm your design assistant. How can I help you today?",
         sender: "bot",
         timestamp: new Date(),
-      }
+      },
     ]);
   }, []);
 
   // Auto-scroll to bottom when messages change
   useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
-
-  const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
+  }, [messages]);
 
   const handleWhatsApp = () => {
     window.open('https://wa.me/9048400797', '_blank');
@@ -49,8 +54,8 @@ const ChatBot = () => {
     window.location.href = 'tel:+9048400797';
   };
 
-  const handleQuickQuestion = (question) => {
-    const userMessage = {
+  const handleQuickQuestion = (question: string) => {
+    const userMessage: Message = {
       id: messages.length + 1,
       text: question,
       sender: "user",
@@ -73,7 +78,8 @@ const ChatBot = () => {
         default:
           response = "That's a great question! Our design consultant can provide detailed information. Would you like to connect with them via WhatsApp or schedule a call?";
       }
-      const botMessage = {
+
+      const botMessage: Message = {
         id: messages.length + 2,
         text: response,
         sender: "bot",
@@ -86,7 +92,7 @@ const ChatBot = () => {
   const quickQuestions = [
     "What services do you offer?",
     "How much does a project cost?",
-    "How long does a project take?"
+    "How long does a project take?",
   ];
 
   return (

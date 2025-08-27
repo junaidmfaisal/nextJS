@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Service5() {
   return (
@@ -63,9 +64,11 @@ export default function Service5() {
                 Offer : <span className="font-bold text-lg">₹ 14.95 Lakhs</span>{' '}
                 <span className="line-through">₹ 19.43 Lakhs</span>
               </p>
-              <button className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-semibold w-fit transition-colors">
-                Get the offer
-              </button>
+              <Link href={'/contact'}>
+                <button className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-semibold w-fit transition-colors">
+                  Get the offer
+                </button>
+              </Link>
             </div>
           </div>
         </motion.div>

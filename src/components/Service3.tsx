@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Service3() {
     return (
@@ -48,13 +49,15 @@ export default function Service3() {
                     <h3 className="text-xl sm:text-4xl font-semibold text-black mb-4">
                         MODULAR KITCHEN
                     </h3>
-                    <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white px-6 py-2  font-medium mb-6"
-                    >
-                        Enquire Now
-                    </motion.button>
+                    <Link href={'/contact'}>
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white px-6 py-2  font-medium mb-6"
+                        >
+                            Enquire Now
+                        </motion.button>
+                    </Link>
                 </motion.div>
 
                 {/* Paragraph */}
@@ -102,13 +105,15 @@ export default function Service3() {
                         <h3 className="text-2xl sm:text-4xl font-semibold text-black mb-4">
                             BEDROOM WORKS
                         </h3>
+                       <Link href={'/contact'}>
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white px-6 py-2  font-medium"
+                            className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white px-6 py-2  font-medium mb-6"
                         >
                             Enquire Now
                         </motion.button>
+                    </Link>
                     </motion.div>
 
                     {/* Right Side (Image) */}
@@ -185,13 +190,15 @@ export default function Service3() {
                     <h3 className="text-xl sm:text-4xl font-semibold text-black mb-4">
                         KIDS BEDROOM
                     </h3>
-                    <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white px-6 py-2  font-medium mb-6"
-                    >
-                        Enquire Now
-                    </motion.button>
+                    <Link href={'/contact'}>
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white px-6 py-2  font-medium mb-6"
+                        >
+                            Enquire Now
+                        </motion.button>
+                    </Link>
                 </motion.div>
 
                 {/* Paragraph */}
@@ -221,13 +228,15 @@ export default function Service3() {
                         <h3 className="text-2xl sm:text-4xl font-semibold text-black mb-4">
                             LIVING ROOM
                         </h3>
+                        <Link href={'/contact'}>
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white px-6 py-2  font-medium"
+                            className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white px-6 py-2  font-medium mb-6"
                         >
                             Enquire Now
                         </motion.button>
+                    </Link>
                     </motion.div>
 
                     {/* Right Side (Image) */}
@@ -294,13 +303,15 @@ export default function Service3() {
                     <h3 className="text-xl sm:text-4xl font-semibold text-black mb-4">
                         DINING ROOM
                     </h3>
-                    <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white px-6 py-2  font-medium mb-6"
-                    >
-                        Enquire Now
-                    </motion.button>
+                    <Link href={'/contact'}>
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white px-6 py-2  font-medium mb-6"
+                        >
+                            Enquire Now
+                        </motion.button>
+                    </Link>
                 </motion.div>
 
                 {/* Paragraph */}

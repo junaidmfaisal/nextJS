@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Service1() {
   return (
@@ -34,13 +35,15 @@ export default function Service1() {
         <p className="text-white text-lg sm:text-xl md:text-2xl mb-6">
           Creative Home Interior Decorators
         </p>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          className="bg-white text-black px-6 py-3  font-semibold shadow-lg"
-        >
-          BOOK NOW
-        </motion.button>
+        <Link href={'/contact'}>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white text-black px-6 py-3  font-semibold shadow-lg"
+          >
+            BOOK NOW
+          </motion.button>
+        </Link>
       </motion.div>
     </section>
   );

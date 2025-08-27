@@ -138,15 +138,17 @@ export default function WhyChoose() {
               variants={itemAnimation}
               whileHover={cardHoverAnimation}
             >
-              <div className="flex items-center mb-4">
-                <div className="p-2 bg-teal-50 rounded-lg text-teal-600 mr-3">
+              <div className="flex items-start mb-4">
+                <div className="p-2 bg-teal-50 rounded-lg text-teal-600 mr-3 flex-shrink-0 mt-1">
                   {item.icon}
                 </div>
-                <h3 className="font-semibold text-lg text-gray-800">{item.title}</h3>
+                <h3 className="font-semibold text-lg text-gray-800 leading-tight min-h-[56px] flex items-center">
+                  {item.title}
+                </h3>
               </div>
-              <p className="text-gray-600 mt-2">{item.description}</p>
+              <p className="text-gray-600 mt-2 flex-grow">{item.description}</p>
               <div className="mt-4 pt-4 border-t border-gray-100 flex items-center">
-                <div className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center text-teal-600 mr-2">
+                <div className="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center text-teal-600 mr-2 flex-shrink-0">
                   <span className="text-xs font-bold">{index + 1}</span>
                 </div>
                 <div className="h-1 flex-1 bg-gray-200 rounded-full overflow-hidden">

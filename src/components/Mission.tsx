@@ -37,8 +37,19 @@ export default function Mission() {
   );
 
   return (
-    <section className="w-full px-4 py-16 md:py-24 bg-white text-gray-900">
+    <section className="w-full px-4 py-16 md:py-10 bg-white text-gray-900">
       <div className="max-w-6xl mx-auto">
+        {/* Centered Section title with decorative element */}
+        <div className="relative mb-8 text-center">
+          <div className="absolute left-1/2 -translate-x-1/2 top-10 w-[5rem] h-0.5 bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896]"></div>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
+            {renderAnimatedText('Our Mission')}
+          </h2>
+          <p className="mt-2 bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] bg-clip-text text-transparent font-medium">
+            Excellence in every detail
+          </p>
+        </div>
+        
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Logo on the left */}
           <div className="lg:w-1/2 w-full order-2 lg:order-1">
@@ -70,20 +81,9 @@ export default function Mission() {
               viewport={{ once: true }}
               className="text-center lg:text-left"
             >
-              {/* Section title with decorative element */}
-              <div className="relative mb-8">
-                <div className="absolute left-12 top-10 w-[5rem] h-0.5 bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] hidden lg:block"></div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
-                  {renderAnimatedText('Our Mission')}
-                </h2>
-                <p className="mt-2 bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] bg-clip-text text-transparent font-medium">
-                  Excellence in every detail
-                </p>
-              </div>
-              
               {/* Mission statement with hover animation */}
               <motion.div 
-                className="bg-gray-50 p-6 rounded-lg border-l-4 border-gradient-to-b from-[#004e66] via-[#00787a] to-[#00a896] mb-8"
+                className="bg-gray-50 p-6 rounded-lg border-l-4 border-gradient-to-b from-[#004e66] via-[#00787a] to-[#00a896] mb-5"
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)",

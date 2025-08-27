@@ -51,7 +51,7 @@ export default function Footer() {
             {/* Google Map Embed */}
             <div className="mt-4 h-32 w-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.082395399002!2d76.3200112749927!3d9.966805990137037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0873c7e1e7d5d5%3A0xea4f1b6f3c4f3c4f!2sVyttila%2C%20Kochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1642345678901!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.431004061825!2d76.3205794!3d9.9812108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080df3a7aed985%3A0x831455f56ffc62b5!2sHomora%20Interiors%20Private%20Limited!5e0!3m2!1sen!2sin!4v1756285268894!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

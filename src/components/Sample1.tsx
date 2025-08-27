@@ -51,7 +51,7 @@ export default function Sample1() {
           Interior<br />spaces,<br />inspired<br />solutions.
         </h2>
         <Link
-          href="#"
+          href="/services"
           className="mt-4 text-sm underline underline-offset-4 hover:text-gray-300 transition"
         >
           SEE OUR PROCESS
@@ -70,7 +70,7 @@ export default function Sample1() {
           Shaping<br />your<br />space,<br />together.
         </h2>
         <Link
-          href="#"
+          href="/contact"
           className="mt-4 text-sm underline underline-offset-4 hover:text-gray-700 transition"
         >
           GET IN TOUCH WITH US

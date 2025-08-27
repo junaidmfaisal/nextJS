@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Hero() {
   const heading = 'Welcome to Homora Interiors';
@@ -113,14 +114,16 @@ export default function Hero() {
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
           >
-            <Button className="text-base md:text-lg px-6 py-3 rounded-full bg-white text-[#004e66] hover:bg-gray-100 transition-all duration-300 group shadow-lg hover:shadow-xl">
-              <span className="transition-transform duration-300 group-hover:-translate-y-1 inline-block">
-                Get Started
-              </span>
-              <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1 inline-block">
-                →
-              </span>
-            </Button>
+            <Link href={'/services'}>
+              <Button className="text-base md:text-lg px-6 py-3 rounded-full bg-white text-[#004e66] hover:bg-gray-100 transition-all duration-300 group shadow-lg hover:shadow-xl">
+                <span className="transition-transform duration-300 group-hover:-translate-y-1 inline-block">
+                  Get Started
+                </span>
+                <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1 inline-block">
+                  →
+                </span>
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </div>

@@ -34,7 +34,7 @@ export default function Sample3() {
         </p>
 
         <Link
-          href="#"
+          href="/services"
           className="inline-block mt-6 px-6 py-3 bg-red-600 text-white text-sm font-medium rounded hover:bg-red-700 transition"
         >
           Know More

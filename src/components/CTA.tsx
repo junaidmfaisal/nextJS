@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function CTASection() {
   const letterAnimation = {
@@ -45,9 +46,11 @@ export default function CTASection() {
           Let’s make your living space beautifully you — modern, functional, and uniquely personal. Connect with us and bring your vision to life.
         </p>
         <div>
-          <Button className="text-white bg-white/10 hover:bg-white/40 border border-white/30 rounded-full px-6 py-2 sm:px-8 sm:py-3 text-sm sm:text-base">
-            Get in Touch
-          </Button>
+          <Link href={'/contact'}>
+            <Button className="text-white bg-white/10 hover:bg-white/40 border border-white/30 rounded-full px-6 py-2 sm:px-8 sm:py-3 text-sm sm:text-base">
+              Get in Touch
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

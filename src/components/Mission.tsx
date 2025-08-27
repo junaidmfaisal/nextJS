@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { CheckCircle } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Mission() {
   const letterAnimation = {
@@ -139,13 +140,15 @@ export default function Mission() {
               </div>
               
               {/* Call to action */}
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] hover:from-[#003d52] hover:via-[#00635f] hover:to-[#008e7a] text-white font-medium py-3 px-6 transition-all duration-300 shadow-md"
-              >
-                Discover Our Approach
-              </motion.button>
+             <Link href={'/services'}>
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] hover:from-[#003d52] hover:via-[#00635f] hover:to-[#008e7a] text-white font-medium py-3 px-6 transition-all duration-300 shadow-md"
+                >
+                  Discover Our Approach
+                </motion.button>
+             </Link>
             </motion.div>
           </div>
         </div>

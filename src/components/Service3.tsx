@@ -66,9 +66,9 @@ export default function Service3() {
                     transition={{ duration: 0.8 }}
                     className="text-gray-700 leading-relaxed text-sm sm:text-base w-full md:w-[80rem] col-span-1 md:col-span-2 text-justify order-3 md:order-3"
                 >
-                    We at Homora Interiors believe that the key to a family's health depends on the
+                    We at Homora Interiors believe that the key to a family&apos;s health depends on the
                     environment in which the food is prepared at their home. In this context,
-                    the kitchen's design and hygiene are of prime importance. Homora Interiors is
+                    the kitchen&apos;s design and hygiene are of prime importance. Homora Interiors is
                     able to design the most sensible and convenient kitchen interior design
                     solutions for our clients. We keep the little intricacies of hygiene in mind
                     like the use of sunlight to place the wash area in order to prevent

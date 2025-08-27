@@ -96,15 +96,15 @@ export default function Mission() {
                 </p>
               </motion.div>
               
-              {/* Core values */}
+              {/* Core values - Added responsive alignment */}
               <div className="mb-8">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Our Core Values</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center lg:text-left">Our Core Values</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
                     <div className="mt-1 flex-shrink-0">
                       <CheckCircle className="w-5 h-5 text-[#00787a]" />
                     </div>
-                    <div>
+                    <div className="text-left"> {/* Added text-left for mobile */}
                       <h4 className="font-medium text-gray-800">Quality Craftsmanship</h4>
                       <p className="text-gray-600 text-sm mt-1">Meticulous attention to detail in every project we undertake</p>
                     </div>
@@ -113,7 +113,7 @@ export default function Mission() {
                     <div className="mt-1 flex-shrink-0">
                       <CheckCircle className="w-5 h-5 text-[#00787a]" />
                     </div>
-                    <div>
+                    <div className="text-left"> {/* Added text-left for mobile */}
                       <h4 className="font-medium text-gray-800">Customer Satisfaction</h4>
                       <p className="text-gray-600 text-sm mt-1">Your happiness is our ultimate measure of success</p>
                     </div>
@@ -122,7 +122,7 @@ export default function Mission() {
                     <div className="mt-1 flex-shrink-0">
                       <CheckCircle className="w-5 h-5 text-[#00787a]" />
                     </div>
-                    <div>
+                    <div className="text-left"> {/* Added text-left for mobile */}
                       <h4 className="font-medium text-gray-800">Timely Delivery</h4>
                       <p className="text-gray-600 text-sm mt-1">We respect your time with reliable project completion</p>
                     </div>
@@ -131,7 +131,7 @@ export default function Mission() {
                     <div className="mt-1 flex-shrink-0">
                       <CheckCircle className="w-5 h-5 text-[#00787a]" />
                     </div>
-                    <div>
+                    <div className="text-left"> {/* Added text-left for mobile */}
                       <h4 className="font-medium text-gray-800">Innovative Solutions</h4>
                       <p className="text-gray-600 text-sm mt-1">Smart designs that enhance your living experience</p>
                     </div>

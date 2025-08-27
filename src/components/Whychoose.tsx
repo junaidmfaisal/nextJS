@@ -86,7 +86,7 @@ export default function WhyChoose() {
           variants={letterAnimation}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "0px" }} // Changed from -100px to 0px
           className="inline-block"
         >
           {char === ' ' ? '\u00A0' : char}
@@ -108,7 +108,7 @@ export default function WhyChoose() {
             className="text-4xl md:text-5xl font-bold tracking-tight mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "0px" }} // Changed from -100px to 0px
             transition={{ duration: 0.6 }}
           >
             {renderAnimatedText('Why Choose Homora?')}
@@ -117,7 +117,7 @@ export default function WhyChoose() {
             className="text-xl text-gray-600 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "0px" }} // Changed from -100px to 0px
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             Experience the difference of working with interior design professionals who care about your vision as much as you do.
@@ -129,7 +129,7 @@ export default function WhyChoose() {
           variants={containerAnimation}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "0px" }} // Changed from -100px to 0px
         >
           {points.map((item, index) => (
             <motion.div
@@ -156,7 +156,7 @@ export default function WhyChoose() {
                     className="h-full bg-teal-500"
                     initial={{ width: 0 }}
                     whileInView={{ width: "100%" }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, margin: "0px" }} // Changed from -100px to 0px
                     transition={{ duration: 1, delay: 0.5 + index * 0.1 }}
                   />
                 </div>

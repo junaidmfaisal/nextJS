@@ -17,10 +17,10 @@ function Mainpage() {
       <Nav/>
       <Hero/>
       <About/>
-      <Sample1/>
       <Sample2/>
-      <Sample3/>
+      <Sample1/>
       <WhyChoose/>
+      <Sample3/>
       <Mission/>
       <Journey/>
       <Faq/>

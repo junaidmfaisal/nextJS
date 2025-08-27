@@ -16,7 +16,7 @@ export default function Sample3() {
 
   return (
     <section className="w-full grid grid-cols-1 md:grid-cols-2 min-h-screen items-center bg-white">
-      
+
       {/* Left Text Section with animation */}
       <motion.div
         ref={refLeft}
@@ -30,8 +30,7 @@ export default function Sample3() {
         </h2>
 
         <p className="text-gray-600 mt-6 text-base leading-relaxed max-w-md">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ratione neque molestias voluptatem doloremque aut animi vero sint quam odit sed? Nobis nostrum obcaecati aperiam, iste labore soluta praesentium? Ratione!
-        </p>
+          We believe true elegance is found in the seamless blend of form and function. It is the art of creating environments that are not only visually stunning but intuitively lived in. Our designs tell a unique story, reflecting your essence while elevating the everyday into an experience of refined luxury.        </p>
 
         <Link
           href="/services"

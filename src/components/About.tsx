@@ -44,16 +44,16 @@ export default function About() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/about.jpg",
+            backgroundImage: "url('/about.jpg')",
             filter: "blur(3px) brightness(0.95)"
           }}
         ></div>
-        {/* Gradient overlay for better readability */}
+        {/* Gradient overlay  */}
         <div className="absolute inset-0 bg-gradient-to-r from-white/70 to-white/30"></div>
       </div>
       
       <div className="max-w-5xl mx-auto space-y-10 text-center relative z-10">
-        {/* Section Header with Scroll-Triggered Animation */}
+        {/* Section Header*/}
         <motion.h2
           ref={headingRef}
           className="text-3xl md:text-4xl font-bold tracking-tight"

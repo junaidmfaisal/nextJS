@@ -47,6 +47,21 @@ export default function Footer() {
               </a>
             </p>
             <p>Address: 48/1326-D, Rosa mystica building, P.C road, Vyttila P.O kochi-682019</p>
+            
+            {/* Google Map Embed */}
+            <div className="mt-4 h-32 w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.082395399002!2d76.3200112749927!3d9.966805990137037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0873c7e1e7d5d5%3A0xea4f1b6f3c4f3c4f!2sVyttila%2C%20Kochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1642345678901!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Homora Interiors Location"
+                className="rounded-md"
+              ></iframe>
+            </div>
           </div>
         </div>
 

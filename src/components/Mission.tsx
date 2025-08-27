@@ -92,7 +92,7 @@ export default function Mission() {
                 }}
               >
                 <p className="text-lg md:text-xl leading-relaxed text-gray-700 italic">
-                  "To transform your dream home into reality through exceptional design, premium quality products, and unparalleled service—making everyday living simpler, smarter, and more enjoyable."
+                  &quot;To transform your dream home into reality through exceptional design, premium quality products, and unparalleled service—making everyday living simpler, smarter, and more enjoyable.&quot;
                 </p>
               </motion.div>
               

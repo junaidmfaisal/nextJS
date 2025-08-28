@@ -70,7 +70,7 @@ export default function Footer() {
           <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
           <div className="flex gap-4 md:justify-start">
             <a 
-              href="https://www.facebook.com" 
+              href="https://www.facebook.com/share/1DvhZhbk2H/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-yellow-300 transition-colors"
@@ -79,7 +79,7 @@ export default function Footer() {
               <FaFacebook size={20} />
             </a>
             <a 
-              href="https://www.instagram.com" 
+              href="https://www.instagram.com/homora_interiors?igsh=MWVvNHdiZGRsNng1Zg%3D%3D&utm_source=qr" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-yellow-300 transition-colors"
@@ -87,7 +87,7 @@ export default function Footer() {
             >
               <FaInstagram size={20} />
             </a>
-            <a 
+            {/* <a 
               href="https://www.linkedin.com" 
               target="_blank" 
               rel="noopener noreferrer"
@@ -95,7 +95,7 @@ export default function Footer() {
               aria-label="Visit our LinkedIn page"
             >
               <FaLinkedin size={20} />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

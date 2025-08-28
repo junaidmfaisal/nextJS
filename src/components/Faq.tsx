@@ -11,9 +11,9 @@ const faqs = [
       'An interior designer helps transform your space to be functional, stylish, and tailored to your lifestyle while optimizing layout, lighting, and material use.',
   },
   {
-    question: 'Why is Livespace perfect for your home interior design?',
+    question: 'Why is Homora perfect for your home interior design?',
     answer:
-      'Livespace offers end-to-end solutions with expert designers, high-quality materials, transparent pricing, and timely project delivery.',
+      'Homora offers end-to-end solutions with expert designers, high-quality materials, transparent pricing, and timely project delivery.',
   },
   {
     question: 'What services are included under home interior design?',

@@ -28,7 +28,7 @@ export default function Service3() {
                     className="flex justify-center order-1 md:order-1"
                 >
                     <Image
-                        src="/img1 (1).jpeg"
+                        src="/kitchen.jpg"
                         alt="Modular Kitchen"
                         width={900}
                         height={700}
@@ -101,7 +101,7 @@ export default function Service3() {
                         className="flex justify-center order-1 md:order-2"
                     >
                         <Image
-                            src="/img1 (2).jpeg"
+                            src="/bedroom.jpg"
                             alt="Bedroom Works"
                             width={800}
                             height={600}
@@ -167,7 +167,7 @@ export default function Service3() {
                     className="flex justify-center order-1 md:order-1"
                 >
                     <Image
-                        src="/img1 (1).jpeg"
+                        src="/kids.jpg"
                         alt="KIDS BEDROOM"
                         width={900}
                         height={700}
@@ -221,7 +221,7 @@ export default function Service3() {
                         className="flex justify-center order-1 md:order-2"
                     >
                         <Image
-                            src="/img1 (2).jpeg"
+                            src="/living.jpg"
                             alt="LIVING ROOM"
                             width={800}
                             height={600}
@@ -277,7 +277,7 @@ export default function Service3() {
                     className="flex justify-center order-1 md:order-1"
                 >
                     <Image
-                        src="/img1 (1).jpeg"
+                        src="/dining.jpg"
                         alt="DINING ROOM"
                         width={900}
                         height={700}

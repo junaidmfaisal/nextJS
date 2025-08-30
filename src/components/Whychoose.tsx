@@ -108,7 +108,7 @@ export default function WhyChoose() {
             className="text-4xl md:text-5xl font-bold tracking-tight mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px" }} 
+            viewport={{ once: true, margin: "0px" }} // Changed from -100px to 0px
             transition={{ duration: 0.6 }}
           >
             {renderAnimatedText('Why Choose Homora?')}
@@ -117,7 +117,7 @@ export default function WhyChoose() {
             className="text-xl text-gray-600 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px" }} 
+            viewport={{ once: true, margin: "0px" }} // Changed from -100px to 0px
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             Experience the difference of working with interior design professionals who care about your vision as much as you do.

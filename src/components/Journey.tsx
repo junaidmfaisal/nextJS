@@ -51,7 +51,7 @@ export default function Journey() {
             >
               {/* Section title with decorative element */}
               <div className="relative">
-                <h2 className="text-2xl md:text-4xl font-bold text-gray-900 tracking-tight">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
                   {renderAnimatedText('Designing Your Dream Home')}
                 </h2>
                 <p className="mt-2 bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] bg-clip-text text-transparent font-medium">

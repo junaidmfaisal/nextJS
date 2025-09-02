@@ -41,7 +41,7 @@ export default function About() {
     <section className="w-full px-4 py-20 text-gray-900 relative overflow-hidden">
       {/* Background image container */}
       <div className="absolute inset-0 z-0">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: "url('/about.jpg')",
@@ -51,7 +51,7 @@ export default function About() {
         {/* Gradient overlay  */}
         <div className="absolute inset-0 bg-gradient-to-r from-white/70 to-white/30"></div>
       </div>
-      
+
       <div className="max-w-5xl mx-auto space-y-10 text-center relative z-10">
         {/* Section Header*/}
         <motion.h2
@@ -77,12 +77,10 @@ export default function About() {
           </p>
         </div>
 
-        {/* Final CTA Line */}
-        <div className="pt-10">
-          <p className="text-xl font-medium">
-            {renderAnimatedText(
-              'At Homora Interiors, your dream home is our mission. Let’s make it simpler, smarter, and beautifully you.'
-            )}
+        {/* Final CTA Line - Fixed for mobile */}
+        <div className="pt-10 w-[22.5rem] lg:w-full md:w-[45.2rem] ">
+          <p className="text-lg font-medium break-words hyphens-auto text-left">
+            {renderAnimatedText("At Homora Interiors, your dream home is our mission. Let's make it simpler, smarter, and beautifully you.")}
           </p>
         </div>
       </div>

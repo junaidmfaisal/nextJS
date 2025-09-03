@@ -63,15 +63,15 @@ export default function Timeline() {
         </h2>
 
         {/* Steps */}
-        <div className="flex flex-col md:flex-col lg:flex-row items-center justify-center">
+        <div className="flex flex-col items-center justify-center gap-4 md:gap-6 lg:flex-row">
           {steps.map((step, index) => {
             const isActive = active === step.id;
 
             return (
-              <div key={step.id} className="flex md:flex-col lg:flex-row items-center w-full md:w-auto">
+              <div key={step.id} className="flex flex-col items-center w-full md:flex-col lg:flex-row md:w-auto">
                 {/* Step */}
                 <div
-                  className="flex flex-col md:flex-col lg:flex-col items-center cursor-pointer group py-4 md:py-2 lg:py-0"
+                  className="flex flex-col items-center cursor-pointer group py-4 md:py-2 lg:py-0"
                   onClick={() => setActive(step.id)}
                 >
                   <motion.div
@@ -99,14 +99,14 @@ export default function Timeline() {
                 {/* Connector for mobile (vertical) */}
                 {index < steps.length - 1 && (
                   <>
-                    <div className="md:hidden flex flex-col items-center mx-4">
+                    <div className="md:hidden flex flex-col items-center mx-auto">
                       <div className="w-0.5 h-8 bg-gray-300"></div>
                       <div className="w-0 h-0 border-l-[6px] border-r-[6px] border-t-[10px] border-l-transparent border-r-transparent border-t-gray-400 my-1"></div>
                       <div className="w-0.5 h-8 bg-gray-300"></div>
                     </div>
                     
                     {/* Connector for tablet (vertical) */}
-                    <div className="hidden md:flex lg:hidden flex-col items-center mx-4 my-2">
+                    <div className="hidden md:flex lg:hidden flex-col items-center mx-auto my-2">
                       <div className="w-0.5 h-6 bg-gray-300"></div>
                       <div className="w-0 h-0 border-l-[6px] border-r-[6px] border-t-[10px] border-l-transparent border-r-transparent border-t-gray-400 my-1"></div>
                       <div className="w-0.5 h-6 bg-gray-300"></div>

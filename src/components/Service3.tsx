@@ -94,81 +94,77 @@ export default function Service3() {
                 </div>
             </div>
 
-            {/* Section 2 - Bedroom Works */}
+            {/* Section 2 - Bedroom Works - FIXED */}
             <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center bg-no-repeat"></div>
                 <div className="absolute inset-0 bg-black/40"></div>
-                <div className="relative w-full px-4 py-8 md:py-12">
-                    <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-10 items-center">
-                        {/* Mobile: Image first */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, amount: 0.3 }}
-                            transition={{ duration: 0.8 }}
-                            className="flex justify-center order-1 md:order-2"
-                        >
-                            <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-lg">
-                                <Image
-                                    src="https://images.unsplash.com/photo-1505693314120-0d443867891c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=80"
-                                    alt="Bedroom Works"
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
-                        </motion.div>
+                <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center px-4 sm:px-6 lg:px-12 py-10">
+                    {/* Mobile: Image first - Changed order for mobile */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 0.8 }}
+                        className="flex justify-center order-1 md:order-2"
+                    >
+                        <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-lg">
+                            <Image
+                                src="https://images.unsplash.com/photo-1505693314120-0d443867891c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=80"
+                                alt="Bedroom Works"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                    </motion.div>
 
-                        {/* Mobile: Content second */}
-                        <motion.div
-                            initial={{ opacity: 0, x: -50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, amount: 0.3 }}
-                            transition={{ duration: 0.8 }}
-                            className="text-center md:text-right order-2 md:order-1"
-                        >
-                            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-4">
-                                BEDROOM WORKS
-                            </h3>
-                            <Link href={'/contact'}>
-                                <motion.button
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white px-6 py-2 font-medium mb-6"
-                                >
-                                    Enquire Now
-                                </motion.button>
-                            </Link>
-                        </motion.div>
-                    </div>
+                    {/* Mobile: Content second - Changed order for mobile */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 0.8 }}
+                        className="text-center md:text-right order-2 md:order-1"
+                    >
+                        <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-4">
+                            BEDROOM WORKS
+                        </h3>
+                        <Link href={'/contact'}>
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white px-6 py-2 font-medium mb-6"
+                            >
+                                Enquire Now
+                            </motion.button>
+                        </Link>
+                    </motion.div>
 
                     {/* Mobile: Paragraph third */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 40 }}
+                    <motion.p
+                        initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ duration: 0.8 }}
-                        className="mt-6 md:mt-10 max-w-full text-center md:text-left order-3"
+                        className="text-white leading-relaxed text-base sm:text-lg w-full md:w-full col-span-1 md:col-span-2 text-justify order-3 md:order-3 bg-black/40 p-4 rounded-lg backdrop-blur-sm"
                     >
-                        <p className="text-white leading-relaxed text-base sm:text-lg text-justify bg-black/40 p-4 rounded-lg backdrop-blur-sm">
-                            People spend a lot of memorable and relaxing moments in the bedroom.
-                            It is a place of rest and should provide the utmost comfort. We at
-                            Homora Interiors believe that the materials, design and space management
-                            should be of the highest quality. The need to have an interior design
-                            team that can incorporate all these features is of prime importance.
-                            Well-designed spaces for wardrobes, personal makeup spaces,
-                            comfortable beds, and storage tables are some of the many interior
-                            design furnishing solutions we provide our clients. In addition to
-                            this, we also specialize in ceiling lighting solutions for our
-                            customers with our experienced team of lighting technicians and
-                            designers.
-                        </p>
-                    </motion.div>
+                        People spend a lot of memorable and relaxing moments in the bedroom.
+                        It is a place of rest and should provide the utmost comfort. We at
+                        Homora Interiors believe that the materials, design and space management
+                        should be of the highest quality. The need to have an interior design
+                        team that can incorporate all these features is of prime importance.
+                        Well-designed spaces for wardrobes, personal makeup spaces,
+                        comfortable beds, and storage tables are some of the many interior
+                        design furnishing solutions we provide our clients. In addition to
+                        this, we also specialize in ceiling lighting solutions for our
+                        customers with our experienced team of lighting technicians and
+                        designers.
+                    </motion.p>
                 </div>
             </div>
 
             {/* Section 3 - Kids Bedroom */}
             <div className="relative rounded-xl overflow-hidden shadow-lg">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1591462655502-4ef5f6f46d56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center bg-no-repeat"></div>
+                <div className="absolute inset-0 bg-[url('/kid.jpg')] bg-cover bg-center h-64 w-full"></div>
                 <div className="absolute inset-0 bg-black/40"></div>
                 <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center px-4 sm:px-6 lg:px-12 py-8 md:py-10">
                     {/* Mobile: Image first */}
@@ -181,7 +177,7 @@ export default function Service3() {
                     >
                         <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-lg">
                             <Image
-                                src="https://images.unsplash.com/photo-1591462655502-4ef5f6f46d56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=80"
+                                src="/kid2.jpg"
                                 alt="KIDS BEDROOM"
                                 fill
                                 className="object-cover"
@@ -224,65 +220,61 @@ export default function Service3() {
                 </div>
             </div>
 
-            {/* Section 4 - Living Room */}
+            {/* Section 4 - Living Room - FIXED */}
             <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center bg-no-repeat"></div>
                 <div className="absolute inset-0 bg-black/40"></div>
-                <div className="relative w-full px-4 py-8 md:py-12">
-                    <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-10 items-center">
-                        {/* Mobile: Image first */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, amount: 0.3 }}
-                            transition={{ duration: 0.8 }}
-                            className="flex justify-center order-1 md:order-2"
-                        >
-                            <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-lg">
-                                <Image
-                                    src="https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=80"
-                                    alt="LIVING ROOM"
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
-                        </motion.div>
+                <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center px-4 sm:px-6 lg:px-12 py-10">
+                    {/* Mobile: Image first - Changed order for mobile */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 0.8 }}
+                        className="flex justify-center order-1 md:order-2"
+                    >
+                        <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-lg">
+                            <Image
+                                src="https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=80"
+                                alt="LIVING ROOM"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                    </motion.div>
 
-                        {/* Mobile: Content second */}
-                        <motion.div
-                            initial={{ opacity: 0, x: -50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, amount: 0.3 }}
-                            transition={{ duration: 0.8 }}
-                            className="text-center md:text-right order-2 md:order-1"
-                        >
-                            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-4">
-                                LIVING ROOM
-                            </h3>
-                            <Link href={'/contact'}>
-                                <motion.button
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white px-6 py-2 font-medium mb-6"
-                                >
-                                    Enquire Now
-                                </motion.button>
-                            </Link>
-                        </motion.div>
-                    </div>
+                    {/* Mobile: Content second - Changed order for mobile */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 0.8 }}
+                        className="text-center md:text-right order-2 md:order-1"
+                    >
+                        <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-4">
+                            LIVING ROOM
+                        </h3>
+                        <Link href={'/contact'}>
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white px-6 py-2 font-medium mb-6"
+                            >
+                                Enquire Now
+                            </motion.button>
+                        </Link>
+                    </motion.div>
 
                     {/* Mobile: Paragraph third */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 40 }}
+                    <motion.p
+                        initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ duration: 0.8 }}
-                        className="mt-6 md:mt-10 max-w-full text-center md:text-left order-3"
+                        className="text-white leading-relaxed text-base sm:text-lg w-full md:w-full col-span-1 md:col-span-2 text-justify order-3 md:order-3 bg-black/40 p-4 rounded-lg backdrop-blur-sm"
                     >
-                        <p className="text-white leading-relaxed text-base sm:text-lg text-justify bg-black/40 p-4 rounded-lg backdrop-blur-sm">
-                            Every guest who visits a house is received in the living room. It is a room that gives character to a house and its residents. It sets the tone for creating a good first impression. The arrangement of space in the living room is of importance rather than the size of the living room. In addition to this the furniture, the lighting, and the colours are of importance too. We at Homora Interiors have the best professional home and flat interior design team in South India on hand to handle your living room design requirements with regards to a host of different needs like TV Unit, sofa set, center table, lighting, display out and partitioning.
-                        </p>
-                    </motion.div>
+                        Every guest who visits a house is received in the living room. It is a room that gives character to a house and its residents. It sets the tone for creating a good first impression. The arrangement of space in the living room is of importance rather than the size of the living room. In addition to this the furniture, the lighting, and the colours are of importance too. We at Homora Interiors have the best professional home and flat interior design team in South India on hand to handle your living room design requirements with regards to a host of different needs like TV Unit, sofa set, center table, lighting, display out and partitioning.
+                    </motion.p>
                 </div>
             </div>
 

@@ -11,7 +11,7 @@ export default function Nav() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const navLinks = [
-    { href: '/home', label: 'Home' },
+    { href: '/', label: 'Home' },
     { href: '/projects', label: 'Projects' },
     { href: '/services', label: 'Services' },
     { href: '/contact', label: 'contact' },
@@ -60,16 +60,6 @@ export default function Nav() {
           ))}
         </nav>
 
-        {/* Upload Button (Desktop) - Uncomment if needed */}
-        {/* <div className="hidden md:flex shrink-0 md:absolute md:right-6">
-          <Link
-            href="/admin"
-            className="bg-white text-black px-6 py-2 rounded-full text-sm border border-transparent transition duration-300 hover:bg-[#00787a] hover:text-white hover:border-white"
-          >
-            Upload
-          </Link>
-        </div> */}
-
         {/* Hamburger Icon (Mobile) */}
         <button
           className="md:hidden text-white focus:outline-none"
@@ -80,34 +70,39 @@ export default function Nav() {
         </button>
       </div>
 
-      {/* Mobile Nav */}
+      {/* Mobile Nav with Professional Animation */}
       <div
         className={clsx(
-          'md:hidden transition-all duration-300 overflow-hidden bg-gray-200',
-          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          'md:hidden fixed top-16 left-4 right-4 bg-white rounded-2xl shadow-2xl transform origin-top transition-all duration-500 ease-out z-50',
+          isOpen 
+            ? 'opacity-100 scale-y-100 translate-y-0' 
+            : 'opacity-0 scale-y-0 -translate-y-4 pointer-events-none'
         )}
+        style={{
+          boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
+        }}
       >
-        <nav className="flex flex-col items-start px-4 py-4 space-y-3">
+        <nav className="flex flex-col p-6 space-y-4">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
               onClick={() => setIsOpen(false)}
-              className="text-sm font-medium text-black transition"
+              className="text-lg font-medium text-gray-800 py-3 px-4 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:translate-x-2"
             >
               {label}
             </Link>
           ))}
-          {/* Upload Button (Mobile) - Uncomment if needed */}
-          {/* <Link
-            href="/admin"
-            onClick={() => setIsOpen(false)}
-            className="bg-white text-black px-6 py-2 rounded-full text-sm border border-black transition duration-300 hover:bg-[#00787a] hover:text-white hover:border-white"
-          >
-            Upload
-          </Link> */}
         </nav>
       </div>
+
+      {/* Subtle Backdrop Overlay - Only behind the menu */}
+      {isOpen && (
+        <div 
+          className="md:hidden fixed top-16 left-0 right-0 h-64 bg-gradient-to-b from-black/10 to-transparent z-40 transition-opacity duration-300"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
     </header>
   );
 }

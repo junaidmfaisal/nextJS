@@ -130,11 +130,11 @@ export default function Journey() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               
               {/* Optional: Add a badge on the image */}
-              <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
+              {/* <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
                 <span className="text-sm font-medium bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] bg-clip-text text-transparent">
                   Since 2010
                 </span>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>

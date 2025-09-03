@@ -34,9 +34,9 @@ export default function Nav() {
         'bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896]'
       )}
     >
-      <div className="max-w-8xl px-2 sm:px-4 lg:px-6 h-16 flex items-center justify-between">
+      <div className="max-w-8xl mx-auto px-2 sm:px-4 lg:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center shrink-0">
+        <Link href="/" className="flex items-center shrink-0 md:absolute md:left-6">
           <Image
             src="/logo1.png"
             alt="Homora Logo"
@@ -48,7 +48,7 @@ export default function Nav() {
         </Link>
 
         {/* Centered Nav Links */}
-        <nav className="hidden md:flex flex-1 justify-center items-center gap-8">
+        <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center gap-8">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
@@ -60,8 +60,8 @@ export default function Nav() {
           ))}
         </nav>
 
-        {/* Upload Button (Desktop) */}
-        {/* <div className="hidden md:flex shrink-0">
+        {/* Upload Button (Desktop) - Uncomment if needed */}
+        {/* <div className="hidden md:flex shrink-0 md:absolute md:right-6">
           <Link
             href="/admin"
             className="bg-white text-black px-6 py-2 rounded-full text-sm border border-transparent transition duration-300 hover:bg-[#00787a] hover:text-white hover:border-white"
@@ -98,6 +98,7 @@ export default function Nav() {
               {label}
             </Link>
           ))}
+          {/* Upload Button (Mobile) - Uncomment if needed */}
           {/* <Link
             href="/admin"
             onClick={() => setIsOpen(false)}

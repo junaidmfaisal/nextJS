@@ -55,40 +55,40 @@ export default function Timeline() {
   const [active, setActive] = useState(1);
 
   return (
-    <section className="w-full py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="w-full py-8 md:py-12 lg:py-16 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-8 md:mb-12 lg:mb-16">
           45 Working Days Promised Hand Over*
         </h2>
 
         {/* Steps */}
-        <div className="flex flex-col md:flex-row items-center justify-center">
+        <div className="flex flex-col md:flex-col lg:flex-row items-center justify-center">
           {steps.map((step, index) => {
             const isActive = active === step.id;
 
             return (
-              <div key={step.id} className="flex items-center">
+              <div key={step.id} className="flex md:flex-col lg:flex-row items-center w-full md:w-auto">
                 {/* Step */}
                 <div
-                  className="flex flex-col items-center cursor-pointer group"
+                  className="flex flex-col md:flex-col lg:flex-col items-center cursor-pointer group py-4 md:py-2 lg:py-0"
                   onClick={() => setActive(step.id)}
                 >
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: 'spring', stiffness: 300 }}
-                    className={`w-20 h-20 flex items-center justify-center rounded-full transition-all duration-300 ${
+                    className={`w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 flex items-center justify-center rounded-full transition-all duration-300 ${
                       isActive
                         ? 'bg-blue-50 text-blue-600 border-2 border-blue-500'
                         : 'text-gray-400 group-hover:text-blue-500'
                     }`}
                   >
-                    <div className={`w-10 h-10 transition duration-300 ${isActive ? 'text-blue-600' : 'text-gray-500 group-hover:text-blue-500'}`}>
+                    <div className={`w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 transition duration-300 ${isActive ? 'text-blue-600' : 'text-gray-500 group-hover:text-blue-500'}`}>
                       {step.icon}
                     </div>
                   </motion.div>
                   <p
-                    className={`mt-4 text-sm font-medium ${
+                    className={`mt-2 md:mt-2 lg:mt-4 text-sm font-medium text-center ${
                       isActive ? 'text-blue-600' : 'text-gray-600'
                     }`}
                   >
@@ -96,13 +96,29 @@ export default function Timeline() {
                   </p>
                 </div>
 
-                {/* Connector */}
+                {/* Connector for mobile (vertical) */}
                 {index < steps.length - 1 && (
-                  <div className="hidden md:flex items-center mx-2">
-                    <div className="w-12 h-0.5 bg-gray-300"></div>
-                    <div className="w-0 h-0 border-t-[6px] border-b-[6px] border-l-[10px] border-t-transparent border-b-transparent border-l-gray-400 mx-1"></div>
-                    <div className="w-12 h-0.5 bg-gray-300"></div>
-                  </div>
+                  <>
+                    <div className="md:hidden flex flex-col items-center mx-4">
+                      <div className="w-0.5 h-8 bg-gray-300"></div>
+                      <div className="w-0 h-0 border-l-[6px] border-r-[6px] border-t-[10px] border-l-transparent border-r-transparent border-t-gray-400 my-1"></div>
+                      <div className="w-0.5 h-8 bg-gray-300"></div>
+                    </div>
+                    
+                    {/* Connector for tablet (vertical) */}
+                    <div className="hidden md:flex lg:hidden flex-col items-center mx-4 my-2">
+                      <div className="w-0.5 h-6 bg-gray-300"></div>
+                      <div className="w-0 h-0 border-l-[6px] border-r-[6px] border-t-[10px] border-l-transparent border-r-transparent border-t-gray-400 my-1"></div>
+                      <div className="w-0.5 h-6 bg-gray-300"></div>
+                    </div>
+                    
+                    {/* Connector for desktop (horizontal) */}
+                    <div className="hidden lg:flex items-center mx-2">
+                      <div className="w-12 h-0.5 bg-gray-300"></div>
+                      <div className="w-0 h-0 border-t-[6px] border-b-[6px] border-l-[10px] border-t-transparent border-b-transparent border-l-gray-400 mx-1"></div>
+                      <div className="w-12 h-0.5 bg-gray-300"></div>
+                    </div>
+                  </>
                 )}
               </div>
             );

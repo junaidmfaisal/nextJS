@@ -28,7 +28,7 @@ export default function Service2() {
 
       {/* Description */}
       <motion.p
-        className="text-gray-700 max-w-4xl mx-auto text-center text-sm sm:text-base md:text-lg leading-relaxed"
+        className="text-gray-700 max-w-4xl mx-auto text-left text-sm sm:text-base md:text-lg leading-relaxed"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}

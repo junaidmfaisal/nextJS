@@ -1,7 +1,14 @@
-'use client'
 import React from 'react'
-import Gallery from '@/app/gallery'
+import Gallery1 from '@/components/Gallery1'
+import Gallery2 from '@/components/Gallery2'
 
-export default function ProjectsPage() {
-  return <Gallery />
+function Projects() {
+  return (
+    <div>
+      <Gallery1/>
+      <Gallery2/>
+    </div>
+  )
 }
+
+export default Projects

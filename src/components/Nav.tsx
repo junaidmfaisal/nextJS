@@ -21,9 +21,9 @@ export default function Nav() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const scrollThreshold = 100; 
+      const scrollThreshold = 100;
       setIsScrolled(scrollY > 10);
-      
+
       const progress = Math.min(scrollY / scrollThreshold, 1);
       setScrollProgress(progress);
     };
@@ -36,7 +36,7 @@ export default function Nav() {
     if (scrollProgress === 0) {
       return 'transparent';
     }
-    
+
     return `linear-gradient(to right, 
       rgba(0, 78, 102, ${scrollProgress}), 
       rgba(0, 120, 122, ${scrollProgress}), 
@@ -75,23 +75,24 @@ export default function Nav() {
               key={href}
               href={href}
               className={clsx(
-                "text-lg font-light transition-all duration-500",
-                isScrolled 
-                  ? "text-white hover:text-cyan-200" 
-                  : "text-white hover:text-cyan-100"
+                "relative text-lg font-light transition-all duration-500 group",
+                isScrolled ? "text-white" : "text-white"
               )}
             >
               {label}
+              {/* Underline */}
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
         </nav>
+
 
         {/* Hamburger Icon with transition */}
         <button
           className={clsx(
             "md:hidden focus:outline-none transition-all duration-500 p-1 rounded-md",
-            isScrolled 
-              ? "text-white hover:bg-white/10" 
+            isScrolled
+              ? "text-white hover:bg-white/10"
               : "text-white hover:bg-black/10"
           )}
           onClick={() => setIsOpen(!isOpen)}
@@ -109,8 +110,8 @@ export default function Nav() {
       <div
         className={clsx(
           'md:hidden fixed top-16 left-4 right-4 bg-white rounded-2xl shadow-2xl transform origin-top transition-all duration-500 ease-out z-50',
-          isOpen 
-            ? 'opacity-100 scale-y-100 translate-y-0' 
+          isOpen
+            ? 'opacity-100 scale-y-100 translate-y-0'
             : 'opacity-0 scale-y-0 -translate-y-4 pointer-events-none'
         )}
         style={{
@@ -133,7 +134,7 @@ export default function Nav() {
 
       {/* Enhanced Backdrop Overlay with gradient */}
       {isOpen && (
-        <div 
+        <div
           className="md:hidden fixed inset-0 bg-black/20 z-40 transition-opacity duration-500"
           onClick={() => setIsOpen(false)}
         />

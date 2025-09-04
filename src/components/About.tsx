@@ -78,11 +78,13 @@ export default function About() {
         </div>
 
         {/* Final CTA Line - Fixed for mobile */}
-        <div className="pt-10 w-[22.5rem] lg:w-full md:w-[45.2rem] ">
-          <p className="text-lg font-medium break-words hyphens-auto text-left">
-            {renderAnimatedText("At Homora Interiors, your dream home is our mission. Let's make it simpler, smarter, and beautifully you.")}
+        <div className="pt-10 w-full max-w-[22.5rem] md:max-w-[45.2rem] lg:max-w-full">
+          <p className="text-lg font-medium break-normal hyphens-none text-left lg:text-center">
+            At Homora Interiors, your dream home is our mission. Let's make it simpler,
+            smarter, and beautifully you.
           </p>
         </div>
+
       </div>
     </section>
   );

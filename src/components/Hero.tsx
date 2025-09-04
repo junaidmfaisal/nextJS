@@ -44,7 +44,7 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen w-full overflow-hidden  "
+      className="relative min-h-screen w-full overflow-hidden -top-16  "
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">

@@ -62,7 +62,7 @@ const Faq = () => {
   const heading = 'FAQs About Home Interior Design';
 
   return (
-    <section className="max-w-4xl mx-auto py-8 sm:py-12 px-3 sm:px-4 md:px-6">
+    <section className="max-w-4xl mx-auto py-8 sm:py-16 px-3 sm:px-4 md:px-6">
       {/* Scroll-Triggered Animated Heading */}
       <motion.h2
         ref={headingRef}

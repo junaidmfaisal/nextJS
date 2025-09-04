@@ -37,7 +37,7 @@ export default function Journey() {
   );
 
   return (
-    <section className="w-full px-4 py-16 md:py-24 bg-gray-50 text-gray-900">
+    <section className="w-full px-4 pb-12 md:py-24 bg-gray-50 text-gray-900">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Content on the left */}

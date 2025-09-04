@@ -38,7 +38,7 @@ export default function Mission() {
   );
 
   return (
-    <section className="w-full px-4 py-16 md:py-10 bg-white text-gray-900">
+    <section className="w-full px-4 pt-8 md:py-10 bg-white text-gray-900">
       <div className="max-w-6xl mx-auto">
         {/* Centered Section title with decorative element */}
         <div className="relative mb-8 text-center">

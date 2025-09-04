@@ -37,7 +37,7 @@ export default function CTASection() {
   );
 
   return (
-    <section className="w-full px-4 py-16 sm:py-20 bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white">
+    <section className="w-full px-4 py-12 sm:py-12 bg-gradient-to-r from-[#004e66] via-[#00787a] to-[#00a896] text-white">
       <div className="max-w-4xl mx-auto text-center space-y-6">
         <h2 className="text-xl sm:text-3xl md:text-4xl font-bold leading-tight break-words">
           {renderAnimatedText('Ready to Transform Your Home?')}

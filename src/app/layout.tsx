@@ -5,6 +5,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTA";
 import ChatBot from "@/components/Chatbot";
+import Scroll from "@/components/Scroll";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "HOMORA Interiors",
     images: [
       {
-        url: "/HOMORA.png", 
+        url: "/HOMORA.png",
         width: 1200,
         height: 630,
         alt: "HOMORA Interiors Portfolio",
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/HOMORA.png", 
+    icon: "/HOMORA.png",
   },
 };
 
@@ -80,6 +81,9 @@ export default function RootLayout({
 
         {/* ChatBot Component */}
         <ChatBot />
+
+        {/* Scroll-to-Top Button */}
+        <Scroll />
       </body>
     </html>
   );

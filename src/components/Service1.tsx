@@ -10,7 +10,7 @@ export default function Service1() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/img1 (6).jpeg" 
+          src="/service.jpg" 
           alt="Interior Decorators"
           fill
           className="object-cover"

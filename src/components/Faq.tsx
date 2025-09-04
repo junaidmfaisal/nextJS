@@ -66,7 +66,7 @@ const Faq = () => {
       {/* Scroll-Triggered Animated Heading */}
       <motion.h2
         ref={headingRef}
-        className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center flex justify-center flex-wrap leading-snug"
+        className="text-xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center flex justify-center flex-wrap leading-snug"
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
       >

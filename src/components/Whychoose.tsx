@@ -86,7 +86,7 @@ export default function WhyChoose() {
           variants={letterAnimation}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "0px" }} // Changed from -100px to 0px
+          viewport={{ once: true, margin: "0px" }} 
           className="inline-block"
         >
           {char === ' ' ? '\u00A0' : char}
@@ -105,10 +105,10 @@ export default function WhyChoose() {
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <motion.h2 
-            className="text-4xl md:text-5xl font-bold tracking-tight mb-4"
+            className="text-3xl md:text-5xl font-bold tracking-tight mb-6"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px" }} // Changed from -100px to 0px
+            viewport={{ once: true, margin: "0px" }} 
             transition={{ duration: 0.6 }}
           >
             {renderAnimatedText('Why Choose Homora?')}
@@ -117,7 +117,7 @@ export default function WhyChoose() {
             className="text-xl text-gray-600 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px" }} // Changed from -100px to 0px
+            viewport={{ once: true, margin: "0px" }} 
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             Experience the difference of working with interior design professionals who care about your vision as much as you do.
@@ -129,7 +129,7 @@ export default function WhyChoose() {
           variants={containerAnimation}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "0px" }} // Changed from -100px to 0px
+          viewport={{ once: true, margin: "0px" }} 
         >
           {points.map((item, index) => (
             <motion.div
@@ -156,7 +156,7 @@ export default function WhyChoose() {
                     className="h-full bg-teal-500"
                     initial={{ width: 0 }}
                     whileInView={{ width: "100%" }}
-                    viewport={{ once: true, margin: "0px" }} // Changed from -100px to 0px
+                    viewport={{ once: true, margin: "0px" }} 
                     transition={{ duration: 1, delay: 0.5 + index * 0.1 }}
                   />
                 </div>

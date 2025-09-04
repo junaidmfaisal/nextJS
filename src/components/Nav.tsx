@@ -21,10 +21,9 @@ export default function Nav() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const scrollThreshold = 100; // Distance to fully transition
+      const scrollThreshold = 100; 
       setIsScrolled(scrollY > 10);
       
-      // Calculate scroll progress for smooth gradient appearance
       const progress = Math.min(scrollY / scrollThreshold, 1);
       setScrollProgress(progress);
     };
@@ -33,7 +32,6 @@ export default function Nav() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Calculate intermediate gradient based on scroll progress
   const getGradientStyle = () => {
     if (scrollProgress === 0) {
       return 'transparent';

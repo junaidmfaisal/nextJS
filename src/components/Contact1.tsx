@@ -8,10 +8,10 @@ export default function Contact1() {
     <section className="relative w-full h-[60vh] md:h-[35rem] flex items-center justify-start bg-black text-white -top-16">
       {/* Background Image */}
       <Image
-        src="/img1 (11).jpeg"
+        src="/contact.jpg"
         alt="Contact Background"
         fill
-        className="object-cover object-center opacity-80"
+        className="object-cover"
       />
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50"></div>

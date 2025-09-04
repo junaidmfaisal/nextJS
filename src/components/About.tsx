@@ -56,7 +56,7 @@ export default function About() {
         {/* Section Header*/}
         <motion.h2
           ref={headingRef}
-          className="text-3xl md:text-4xl font-bold tracking-tight"
+          className="text-2xl md:text-4xl font-bold tracking-tight"
         >
           {renderAnimatedText('About Homora Interiors', isInView)}
         </motion.h2>

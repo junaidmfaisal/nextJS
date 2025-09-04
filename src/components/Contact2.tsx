@@ -78,7 +78,7 @@ export default function Contact2() {
 
 
   return (
-    <section className="w-full bg-gray-50 py-12 px-6 md:px-16">
+    <section className="w-full pb-16 px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-bold mb-2">Let&apos;s Collaborate with Us!</h2>

@@ -19,7 +19,7 @@ export default function Service3() {
 
             {/* Section 1 - Modular Kitchen */}
             <div className="relative rounded-xl overflow-hidden shadow-lg">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center bg-no-repeat"></div>
+                <div className="absolute inset-0 bg-[url('/kitchen2.jpg')] bg-cover bg-center bg-no-repeat"></div>
                 <div className="absolute inset-0 bg-black/40"></div>
                 <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center px-4 sm:px-6 lg:px-12 py-10">
                     {/* Mobile: Image first */}
@@ -32,7 +32,7 @@ export default function Service3() {
                     >
                         <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-lg">
                             <Image
-                                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=80"
+                                src="/kitchen.jpg"
                                 alt="Modular Kitchen"
                                 fill
                                 className="object-cover"
@@ -96,7 +96,7 @@ export default function Service3() {
 
             {/* Section 2 - Bedroom Works - FIXED */}
             <div className="relative rounded-xl overflow-hidden shadow-lg">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center bg-no-repeat"></div>
+                <div className="absolute inset-0 bg-[url('/bedroom.2jpg.avif')] bg-cover bg-center bg-no-repeat"></div>
                 <div className="absolute inset-0 bg-black/40"></div>
                 <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center px-4 sm:px-6 lg:px-12 py-10">
                     {/* Mobile: Image first - Changed order for mobile */}
@@ -109,7 +109,7 @@ export default function Service3() {
                     >
                         <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-lg">
                             <Image
-                                src="https://images.unsplash.com/photo-1505693314120-0d443867891c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=80"
+                                src="/bedroom.jpg"
                                 alt="Bedroom Works"
                                 fill
                                 className="object-cover"
@@ -222,7 +222,7 @@ export default function Service3() {
 
             {/* Section 4 - Living Room - FIXED */}
             <div className="relative rounded-xl overflow-hidden shadow-lg">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center bg-no-repeat"></div>
+                <div className="absolute inset-0 bg-[url('/living.jpg')] bg-cover bg-center bg-no-repeat"></div>
                 <div className="absolute inset-0 bg-black/40"></div>
                 <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center px-4 sm:px-6 lg:px-12 py-10">
                     {/* Mobile: Image first - Changed order for mobile */}
@@ -235,7 +235,7 @@ export default function Service3() {
                     >
                         <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-lg">
                             <Image
-                                src="https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=80"
+                                src="/living.jpg"
                                 alt="LIVING ROOM"
                                 fill
                                 className="object-cover"
@@ -280,7 +280,7 @@ export default function Service3() {
 
             {/* Section 5 - Dining Room */}
             <div className="relative rounded-xl overflow-hidden shadow-lg">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center bg-no-repeat"></div>
+                <div className="absolute inset-0 bg-[url('/dining.jpg')] bg-cover bg-center bg-no-repeat"></div>
                 <div className="absolute inset-0 bg-black/40"></div>
                 <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center px-4 sm:px-6 lg:px-12 py-8 md:py-10">
                     {/* Mobile: Image first */}
@@ -293,7 +293,7 @@ export default function Service3() {
                     >
                         <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-lg">
                             <Image
-                                src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=80"
+                                src="/dining.jpg"
                                 alt="DINING ROOM"
                                 fill
                                 className="object-cover"

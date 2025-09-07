@@ -99,10 +99,9 @@ export default function Gallery2() {
       const minSwipeDistance = 50; 
       
       if (touchStartX - touchEndX > minSwipeDistance) {
-        // Swipe left - go to next
         goToNext();
       } else if (touchEndX - touchStartX > minSwipeDistance) {
-        // Swipe right - go to previous
+       
         goToPrevious();
       }
     };

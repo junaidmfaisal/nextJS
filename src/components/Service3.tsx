@@ -164,7 +164,7 @@ export default function Service3() {
 
             {/* Section 3 - Kids Bedroom */}
             <div className="relative rounded-xl overflow-hidden shadow-lg">
-                <div className="absolute inset-0 bg-[url('/kid.jpg')] bg-cover bg-center h-64 w-full"></div>
+                <div className="absolute inset-0 bg-[url('/kid.jpg')] bg-cover bg-center "></div>
                 <div className="absolute inset-0 bg-black/40"></div>
                 <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center px-4 sm:px-6 lg:px-12 py-8 md:py-10">
                     {/* Mobile: Image first */}

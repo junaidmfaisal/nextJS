@@ -1,11 +1,13 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Roboto } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTA";
 import ChatBot from "@/components/Chatbot";
 import Scroll from "@/components/Scroll";
+import FacebookPixelTracker from "@/components/FacebookPixelTracker";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -57,12 +59,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/HOMORA.png",
   },
-
-  // ✅ ADD THIS
   other: {
     "facebook-domain-verification": "3fcierglrxhda7yr0jm5lk161sfksx",
   },
-  
 };
 
 export default function RootLayout({
@@ -82,23 +81,38 @@ export default function RootLayout({
       <body
         className={`${roboto.className} bg-white text-gray-900 antialiased scroll-smooth`}
       >
-        {/* Global Navigation */}
+        <Script id="meta-pixel" strategy="afterInteractive">
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1259535349477003');
+          `}
+        </Script>
+
+        <FacebookPixelTracker />
+
         <Nav />
-
-        {/* Main content area */}
         <main className="pt-16">{children}</main>
-
-        {/* CTA Section */}
         <CTASection />
-
-        {/* Footer */}
         <Footer />
-
-        {/* ChatBot Component */}
         <ChatBot />
-
-        {/* Scroll-to-Top Button */}
         <Scroll />
+
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1259535349477003&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
       </body>
     </html>
   );

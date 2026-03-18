@@ -26,6 +26,15 @@ export const metadata: Metadata = {
     "Interior Styling",
     "Office Interiors",
     "Modern Interior Design",
+    "Residential Interior Design",
+    "Commercial Interior Design",
+    "Interior Design Services",
+    "Interior Designers in Kochi",
+    "Interior Design Company",
+    "Home Makeover",
+    "Interior Design Consultation",
+    "number 1 Interior Design",
+    "kochi's Best Interior Design",
   ],
   authors: [{ name: "HOMORA Interiors" }],
   openGraph: {
@@ -48,6 +57,12 @@ export const metadata: Metadata = {
   icons: {
     icon: "/HOMORA.png",
   },
+
+  // ✅ ADD THIS
+  other: {
+    "facebook-domain-verification": "3fcierglrxhda7yr0jm5lk161sfksx",
+  },
+  
 };
 
 export default function RootLayout({

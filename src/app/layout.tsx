@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Roboto } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTA";
@@ -103,6 +104,7 @@ export default function RootLayout({
         <Footer />
         <ChatBot />
         <Scroll />
+        <SpeedInsights />
 
         <noscript>
           <img
